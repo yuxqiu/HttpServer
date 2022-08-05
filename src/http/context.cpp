@@ -18,7 +18,7 @@ void Response::setContent(std::vector<char> &&v) { content = std::move(v); }
 Context::Context(m_sock_t fd) : fd(fd) {}
 
 void Context::write() {
-  if(resp.headers.empty()){
+  if (resp.headers.empty()) {
     return;
   }
 

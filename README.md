@@ -46,6 +46,7 @@ To register a middleware, you should create a function/functor that takes two pa
 The `Context` class includes two subclasses: one for `Request` and the other for `Response`. The `Task` class stores the function/functor that needs to be called.
 
 To respond to the client, you should modify `Response` to provide the appropriate headers and content. To run the next function/functor in the action chain, `task.next()` needs to be called.
+
 - If no action is needed, call `task.drop()`.
 
 See [docs](. /docs/) for more information about `Context`, `Task` and the Socket API...
