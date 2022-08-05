@@ -1,3 +1,5 @@
 bin/
 build/
 *.log
+.cache
+compile_commands.json
